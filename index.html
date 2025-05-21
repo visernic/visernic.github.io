@@ -6,19 +6,28 @@
   <title>Visernic Limited</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9fafb;
+      background: #f9fafb;
       color: #1f2937;
     }
 
     header {
-      background-color: #111827;
+      background: #111827;
       color: #fff;
-      text-align: center;
       padding: 60px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      margin-top: 10px;
     }
 
     header h1 {
@@ -27,9 +36,9 @@
     }
 
     header p {
-      font-size: 1.2rem;
-      margin: 10px 0;
+      font-size: 1.1rem;
       color: #cbd5e1;
+      margin: 10px 0;
     }
 
     section {
@@ -39,14 +48,15 @@
     }
 
     h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
+      color: #111827;
+      font-size: 1.6rem;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     p, li {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.6;
     }
 
@@ -54,27 +64,31 @@
       padding-left: 20px;
     }
 
-    footer {
-      background-color: #111827;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .contact-info p a {
+    a {
       color: #2563eb;
       text-decoration: none;
     }
 
-    .highlight {
-      color: #3b82f6;
-      font-weight: 600;
+    .info-bar {
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 15px;
+      color: #6b7280;
+    }
+
+    footer {
+      background: #111827;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
 
     @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
       }
+
       section {
         padding: 30px 15px;
       }
@@ -84,14 +98,21 @@
 <body>
 
   <header>
-    <h1>Visernic Limited</h1>
-    <p>Team of Creative Designers & Developers</p>
-    <p>Founded on December 1, 2024 by <span class="highlight">MD Mostafa Niloy</span></p>
+    <h1>🚀 Visernic Limited</h1>
+    <img src="https://i.postimg.cc/7PQrnqnQ/logo.png" alt="Visernic Logo" />
+    <p><strong>Team of Creative Designers & Developers</strong></p>
+    <p>Founded on <strong>December 1, 2024</strong> by <strong>MD Mostafa Niloy</strong></p>
+    <div class="info-bar">
+      🌐 <a href="https://visernic.com" target="_blank">visernic.com</a> • 
+      📧 <a href="mailto:support@visernic.com">support@visernic.com</a> • 
+      📞 +44 7366 493955 • 
+      📍 Nazipur, Patnitala, Naogaon – 6540, Bangladesh
+    </div>
   </header>
 
   <section>
     <h2>🧩 About Us</h2>
-    <p>Visernic is a next-generation digital solutions company delivering cutting-edge technology and design services for businesses worldwide.</p>
+    <p><strong>Visernic</strong> is a next-generation digital solutions company delivering cutting-edge technology and design services for businesses worldwide.</p>
     <ul>
       <li>🌐 <strong>Web Development</strong> – Custom, scalable websites & platforms</li>
       <li>📱 <strong>Mobile App Development</strong> – Android & iOS applications</li>
@@ -112,12 +133,10 @@
 
   <section>
     <h2>📞 Contact Us</h2>
-    <div class="contact-info">
-      <p>📧 Email: <a href="mailto:support@visernic.com">support@visernic.com</a></p>
-      <p>🌐 Website: <a href="https://visernic.com" target="_blank">visernic.com</a></p>
-      <p>📞 Phone: +44 7366 493955</p>
-      <p>📍 Address: Nazipur, Patnitala, Naogaon – 6540, Bangladesh</p>
-    </div>
+    <p>📧 <a href="mailto:support@visernic.com">support@visernic.com</a></p>
+    <p>🌐 <a href="https://visernic.com" target="_blank">visernic.com</a></p>
+    <p>📞 +44 7366 493955</p>
+    <p>📍 Nazipur, Patnitala, Naogaon – 6540, Bangladesh</p>
   </section>
 
   <footer>
