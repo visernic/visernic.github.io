@@ -1,147 +1,741 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Visernic Limited</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Visernic Limited — Innovative Digital Solutions</title>
+  <link rel="icon" href="https://i.postimg.cc/v8pqvwKv/icon-2.png" type="image/png"/>
+  <meta name="description" content="Visernic Limited delivers innovative web development, mobile apps, UI/UX design, SEO, digital marketing, domain registration, and hosting solutions from Bangladesh and the UK.">
+  <meta name="keywords" content="Visernic, digital agency, web development, mobile apps, UI UX design, SEO, digital marketing, domain registration, hosting, SaaS, Bangladesh, UK">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Visernic Limited">
+  <meta property="og:title" content="Visernic Limited — Your Innovative Tech Partner">
+  <meta property="og:description" content="Transform your business with our creative web, mobile, SEO, domain, and hosting solutions from Bangladesh and the UK.">
+  <meta property="og:image" content="https://i.postimg.cc/7PQrnqnQ/logo.png">
+  <meta property="og:url" content="https://visernic.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Visernic Limited — Innovative Digital Solutions">
+  <meta name="twitter:description" content="Discover cutting-edge web, mobile, SEO, domain, and hosting solutions with Visernic Limited.">
+  <meta name="twitter:image" content="https://i.postimg.cc/7PQrnqnQ/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Visernic Limited",
+      "url": "https://visernic.com",
+      "logo": "https://i.postimg.cc/7PQrnqnQ/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+44 7366 493955",
+        "contactType": "Customer Service",
+        "email": "support@visernic.com",
+        "areaServed": "Global"
+      },
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "54 St Mary’s Rd",
+          "addressLocality": "Southampton",
+          "addressCountry": "UK"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Nazipur",
+          "addressCountry": "BD"
+        }
+      ]
+    }
+  </script>
   <style>
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
       background: #f9fafb;
       color: #1f2937;
-    }
-
-    header {
-      background: #111827;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header img {
-      width: 120px;
-      margin-top: 10px;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #cbd5e1;
-      margin: 10px 0;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #111827;
-      font-size: 1.6rem;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-
-    p, li {
-      font-size: 1.05rem;
       line-height: 1.6;
-    }
-
-    ul {
-      padding-left: 20px;
+      overflow-x: hidden;
     }
 
     a {
       color: #2563eb;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
-    .info-bar {
+    a:hover {
+      color: #1d4ed8;
+    }
+
+    /* Navigation */
+    nav {
+      background: #111827;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 16px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo img {
+      width: 80px;
+    }
+
+    .nav-links a {
+      color: #d1d5db;
+      font-weight: 500;
+      margin-left: 24px;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .nav-toggle {
+      display: none;
+      font-size: 1.5rem;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
       text-align: center;
-      font-size: 0.95rem;
-      margin-top: 15px;
-      color: #6b7280;
+      padding: 100px 20px;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
     }
 
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      opacity: 0.5;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      font-weight: 800;
+      margin-bottom: 20px;
+      position: relative;
+      animation: fadeInDown 1s ease;
+    }
+
+    header p {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      max-width: 700px;
+      margin: 0 auto 20px;
+      position: relative;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      color: #ffffff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .cta-button.secondary {
+      background: transparent;
+      border: 2px solid #ffffff;
+      box-shadow: none;
+    }
+
+    .cta-button.secondary:hover {
+      background: #ffffff;
+      color: #1e40af;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    /* Card */
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      font-weight: 600;
+      color: #1e40af;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .card p {
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      color: #4b5563;
+    }
+
+    /* Button Container for Specific Sections */
+    .button-container {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    /* Services & Portfolio */
+    .service-item, .portfolio-item, .process-item, .why-choose-item {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover, .portfolio-item:hover, .process-item:hover, .why-choose-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    /* Team */
+    .team-member {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-member img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    /* FAQ */
+    .faq-item {
+      background: #f9fafb;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      padding: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .faq-item:hover {
+      background: #e5e7eb;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .faq-item h3 {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      font-weight: 600;
+      color: #1e40af;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-item p {
+      display: none;
+      margin-top: 12px;
+      color: #4b5563;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    .faq-item.active p {
+      display: block;
+    }
+
+    .faq-item .toggle-icon {
+      font-size: 1.2rem;
+      color: #2563eb;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .toggle-icon {
+      transform: rotate(45deg);
+    }
+
+    /* Testimonials */
+    .testimonial-item {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .testimonial-item p {
+      font-style: italic;
+      margin-bottom: 15px;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    /* Footer */
     footer {
       background: #111827;
-      color: #cbd5e1;
+      color: #d1d5db;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 40px 20px;
+      font-size: clamp(0.8rem, 2vw, 0.9rem);
     }
 
+    footer a {
+      color: #93c5fd;
+    }
+
+    footer a:hover {
+      color: #bfdbfe;
+    }
+
+    /* Responsive */
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #111827;
+        padding: 20px;
       }
 
-      section {
-        padding: 30px 15px;
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
+      header h1 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+      }
+
+      header p {
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .card {
+        padding: 24px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+
+      .button-container {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: clamp(1.5rem, 3.5vw, 1.8rem);
+      }
+
+      header p {
+        font-size: clamp(0.85rem, 2vw, 0.95rem);
+      }
+
+      .card h2 {
+        font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+      }
+
+      .cta-button {
+        padding: 10px 20px;
+        font-size: clamp(0.85rem, 2vw, 0.95rem);
       }
     }
   </style>
 </head>
 <body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="https://i.postimg.cc/7PQrnqnQ/logo.png" alt="Visernic Logo"/>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Our Process</a>
+        <a href="#why-choose">Why Choose Us</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#team">Team</a>
+        <a href="#faq">FAQ</a>
+        <a href="#blog">Blog</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
 
-  <header>
-    <h1>🚀 Visernic Limited</h1>
-    <img src="https://i.postimg.cc/7PQrnqnQ/logo.png" alt="Visernic Logo" />
-    <p><strong>Team of Creative Designers & Developers</strong></p>
-    <p>Founded on <strong>December 1, 2024</strong> by <strong>MD Mostafa Niloy</strong></p>
-    <div class="info-bar">
-      🌐 <a href="https://visernic.com" target="_blank">visernic.com</a> • 
-      📧 <a href="mailto:support@visernic.com">support@visernic.com</a> • 
-      📞 +44 7366 493955 • 
-      📍 Nazipur, Patnitala, Naogaon – 6540, Bangladesh
+  <!-- Hero Section -->
+  <header id="home">
+    <h1>Transform Your Vision with Visernic</h1>
+    <p>Global creative tech solutions for web, mobile, SEO, domains, and hosting from Bangladesh and the UK.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="cta-button">Get a Quote</a>
+      <a href="#portfolio" class="cta-button secondary">View Our Work</a>
     </div>
   </header>
 
-  <section>
-    <h2>🧩 About Us</h2>
-    <p><strong>Visernic</strong> is a next-generation digital solutions company delivering cutting-edge technology and design services for businesses worldwide.</p>
-    <ul>
-      <li>🌐 <strong>Web Development</strong> – Custom, scalable websites & platforms</li>
-      <li>📱 <strong>Mobile App Development</strong> – Android & iOS applications</li>
-      <li>🎨 <strong>UI/UX Design</strong> – Beautiful, user-centric digital experiences</li>
-      <li>📈 <strong>Digital Marketing</strong> – SEO, advertising & brand growth strategies</li>
-    </ul>
-  </section>
+  <div class="container">
+    <!-- About -->
+    <section id="about" class="card">
+      <h2>🧩 About Us</h2>
+      <p>Visernic Limited is a global creative tech agency delivering innovative solutions in web development, mobile apps, UI/UX design, digital marketing, domain registration, and hosting. Headquartered in Nazipur, Bangladesh, and registered in the UK (Company No: 16613617), we empower businesses worldwide with cutting-edge digital transformation.</p>
+      <div class="button-container">
+        <a href="https://visernic.com" class="cta-button">Explore More</a>
+      </div>
+    </section>
 
-  <section>
-    <h2>🧠 Vision & Mission</h2>
-    <p><em>"To empower modern businesses through innovation, design, and technology that drives real results."</em></p>
-  </section>
+    <!-- Services -->
+    <section id="services" class="card">
+      <h2>🛠 Our Services</h2>
+      <div class="grid">
+        <div class="service-item">
+          <h3>🌐 Web Development</h3>
+          <p>Custom websites built with Laravel, React, and Vue for seamless performance.</p>
+        </div>
+        <div class="service-item">
+          <h3>📱 Mobile Apps</h3>
+          <p>Native and cross-platform apps using Flutter, Android, and iOS.</p>
+        </div>
+        <div class="service-item">
+          <h3>🎨 UI/UX Design</h3>
+          <p>Intuitive, user-centric designs to enhance user experience.</p>
+        </div>
+        <div class="service-item">
+          <h3>📈 Digital Marketing</h3>
+          <p>SEO, social media, and content strategies to boost your brand.</p>
+        </div>
+        <div class="service-item">
+          <h3>☁️ SaaS Solutions</h3>
+          <p>Scalable cloud-based software for modern businesses.</p>
+        </div>
+        <div class="service-item">
+          <h3>🔐 Cybersecurity</h3>
+          <p>Protect your digital assets with our security expertise.</p>
+        </div>
+        <div class="service-item">
+          <h3>🌍Domain Register</h3>
+          <p>Secure custom domains tailored to your brand’s needs.</p>
+        </div>
+        <div class="service-item">
+          <h3>🖥️ Hosting Services</h3>
+          <p>Reliable, secure, and scalable hosting solutions.</p>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>👨‍💼 Founder & CEO</h2>
-    <p><strong>MD Mostafa Niloy</strong></p>
-  </section>
+    <!-- Our Process -->
+    <section id="process" class="card">
+      <h2>🔄 Our Process</h2>
+      <div class="grid">
+        <div class="process-item">
+          <h3>1. Discovery</h3>
+          <p>We analyze your needs and goals to create a tailored strategy.</p>
+        </div>
+        <div class="process-item">
+          <h3>2. Design</h3>
+          <p>Crafting intuitive and visually appealing designs for your project.</p>
+        </div>
+        <div class="process-item">
+          <h3>3. Development</h3>
+          <p>Building robust and scalable solutions using cutting-edge tech.</p>
+        </div>
+        <div class="process-item">
+          <h3>4. Launch & Support</h3>
+          <p>Deploying your project with ongoing support and updates.</p>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>📞 Contact Us</h2>
-    <p>📧 <a href="mailto:support@visernic.com">support@visernic.com</a></p>
-    <p>🌐 <a href="https://visernic.com" target="_blank">visernic.com</a></p>
-    <p>📞 +44 7366 493955</p>
-    <p>📍 Nazipur, Patnitala, Naogaon – 6540, Bangladesh</p>
-  </section>
+    <!-- Why Choose Us -->
+    <section id="why-choose" class="card">
+      <h2>🌟 Why Choose Us</h2>
+      <div class="grid">
+        <div class="why-choose-item">
+          <h3>Global Expertise</h3>
+          <p>Offices in Bangladesh and the UK, serving clients worldwide.</p>
+        </div>
+        <div class="why-choose-item">
+          <h3>50+ Experts</h3>
+          <p>A dedicated team of professionals with diverse skills.</p>
+        </div>
+        <div class="why-choose-item">
+          <h3>Tailored Solutions</h3>
+          <p>Customized strategies to meet your unique business needs.</p>
+        </div>
+        <div class="why-choose-item">
+          <h3>Proven Results</h3>
+          <p>Track record of delivering successful projects across industries.</p>
+        </div>
+      </div>
+      <div class="button-container">
+        <a href="#contact" class="cta-button">Work with Us</a>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="card">
+      <h2>📸 Our Work</h2>
+      <div class="grid">
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/nh3x5QYz/portfolio1.jpg" alt="E-commerce Platform"/>
+          <h3>E-commerce Platform</h3>
+          <p>A scalable online store with secure payment integration.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/5N2qL7kZ/portfolio2.jpg" alt="Mobile Banking App"/>
+          <h3>Mobile Banking App</h3>
+          <p>Secure and user-friendly mobile banking solution.</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://i.postimg.cc/3J7R2Z2k/portfolio3.jpg" alt="Corporate Website"/>
+          <h3>Corporate Website</h3>
+          <p>Modern website for a global enterprise.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="card">
+      <h2>👥 Our Team (50+ Experts)</h2>
+      <div class="grid">
+        <div class="team-member">
+          <img src="https://i.postimg.cc/0jc1wxgY/ceo.jpg" alt="MD Mostafa Niloy"/>
+          <p><strong>MD Mostafa Niloy</strong><br>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="https://i.postimg.cc/J0kNBbhN/profile-circular-with-border-png.png" alt="Sarfenaz Naz"/>
+          <p><strong>Sarfenaz Naz</strong><br>COO-Founder</p>
+        </div>
+        <div class="team-member">
+          <img src="https://i.postimg.cc/zf6ByCwz/509608280-122172668420552414-1261254736712644899-n-modified.png" alt="Shoyaib"/>
+          <p><strong>Shoyaib</strong><br>Chief Marketing Officer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://i.postimg.cc/v8pqvwKv/icon-2.png" alt="Habiba"/>
+          <p><strong>Habiba</strong><br>Chief Marketing Officer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="card">
+      <h2>❓ Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>What services do you provide? <span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+        <p>We offer full-stack web and mobile app development, UI/UX design, SEO, digital marketing, domain registration, hosting, and SaaS solutions.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where is your company located? <span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+        <p>We are headquartered in Nazipur, Bangladesh, with a registered office in Southampton, UK.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer e-commerce support? <span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+        <p>Yes, we provide end-to-end e-commerce solutions with payment gateways and scalability.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How long does a website take to build? <span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+        <p>Typically 2–8 weeks, depending on the project’s complexity and requirements.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can you provide domain and hosting services? <span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+        <p>Yes, we offer custom domain registration and reliable, secure hosting solutions.</p>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="card">
+      <h2>📝 Latest Insights</h2>
+      <div class="grid">
+        <div class="portfolio-item">
+          <h3>Top 5 Web Design Trends for 2026</h3>
+          <p>Discover the latest trends shaping modern web design.</p>
+          <a href="https://blog.visernic.com/top-5-web-design-trends-for-2026" class="cta-button">Read More</a>
+        </div>
+        <div class="portfolio-item">
+          <h3>Boost Your Business with SEO</h3>
+          <p>Learn how SEO drives traffic and growth.</p>
+          <a href="https://blog.visernic.com/boost-your-business-with-seo?showSharer=true" class="cta-button">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="card">
+      <h2>🌟 What Our Clients Say</h2>
+      <div class="grid">
+        <div class="testimonial-item">
+          <p>"Visernic transformed our online presence with a stunning, responsive website!"</p>
+          <p><strong>John Doe</strong>, CEO, TechCorp</p>
+        </div>
+        <div class="testimonial-item">
+          <p>"Their mobile app and hosting solutions were seamless and professional."</p>
+          <p><strong>Jane Smith</strong>, Founder, StartUpX</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <h2>📞 Get in Touch</h2>
+      <p>📍 Address: </Address>54 St Mary’s Rd, Southampton, UK</p>
+      <p>📧 Email: <a href="mailto:support@visernic.com">support@visernic.com</a></p>
+      <p>🌐 Website: <a href="https://visernic.com" target="_blank">visernic.com</a></p>
+      <p>📞 Phone: <a href="tel:+447577062211">+447577062211</a></p>
+      <div class="button-container">
+        <a href="mailto:support@visernic.com" class="cta-button">Contact Us</a>
+      </div>
+    </section>
+  </div>
 
   <footer>
-    &copy; 2025 Visernic Limited. All rights reserved.
+    &copy; 2025 Visernic Limited. All rights reserved. | <a href="https://visernic.com">visernic.com</a>
   </footer>
 
+  <script>
+    // Mobile menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // FAQ accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const header = item.querySelector('h3');
+      header.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all other FAQ items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+            const otherIcon = otherItem.querySelector('.toggle-icon i');
+            otherIcon.classList.remove('fa-minus');
+            otherIcon.classList.add('fa-plus');
+          }
+        });
+
+        // Toggle current FAQ item
+        item.classList.toggle('active');
+        const icon = item.querySelector('.toggle-icon i');
+        icon.classList.toggle('fa-plus');
+        icon.classList.toggle('fa-minus');
+      });
+    });
+
+    // Prevent button clicks from affecting FAQ or other sections
+    document.querySelectorAll('.cta-button').forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent click from bubbling to parent elements
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
+
+
+
+
