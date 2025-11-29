@@ -1,0 +1,40 @@
+/* Layout & Component Styles */
+
+/* Action Buttons */
+.action-button {
+    transition: all 0.2s ease-in-out;
+}
+.action-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Icons */
+.social-icon {
+    transition: all 0.2s ease-in-out;
+}
+.social-icon:hover {
+    transform: translateY(-2px);
+    color: #2563eb; /* blue-600 */
+}
+
+/* Content Cards */
+.content-card {
+    transition: all 0.3s ease-in-out;
+}
+.content-card:hover {
+    transform: translateY(-4px);
+    background-color: #334155; /* slate-700 hover */
+}
+
+/* Video Background Container */
+#player-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; 
+    border-radius: 1rem; /* Matches rounded-2xl */
+}
