@@ -1,0 +1,19 @@
+{
+    "name": "Visernic Limited",
+    "short_name": "Visernic",
+    "icons": [
+        {
+            "src": "https://i.postimg.cc/26RKc169/icon-1.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://i.postimg.cc/26RKc169/icon-1.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0f172a",
+    "background_color": "#0f172a",
+    "display": "standalone"
+}
