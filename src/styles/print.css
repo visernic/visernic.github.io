@@ -1,0 +1,64 @@
+/* Print Media Styles */
+
+@media print {
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    /* Hide non-essential elements */
+    .action-button, 
+    #downloadVcardBtn,
+    footer .social-icon,
+    hr,
+    .animated-border-card,
+    .rocket-border,
+    #player-container {
+        display: none !important;
+    }
+
+    /* Card styling for print */
+    .content-card, 
+    .animated-border-card {
+        background-color: #ffffff !important;
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+    }
+
+    /* Print header card specifics */
+    .animated-border-card {
+        display: block !important;
+        padding: 1.5rem !important;
+    }
+    
+    /* Force text colors */
+    h1, h2, h3, p, span, div, blockquote, a {
+        color: #000000 !important;
+    }
+    
+    /* Hide icons */
+    i.fas, i.fab {
+        visibility: hidden;
+    }
+    
+    /* Link styling */
+    a {
+        color: #0000ee !important;
+        text-decoration: underline !important;
+    }
+    
+    /* Show QR code */
+    img[alt="Contact QR Code"] {
+        display: block !important;
+    }
+    
+    main {
+        display: block !important;
+    }
+    
+    footer {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+}
