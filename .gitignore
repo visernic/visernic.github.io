@@ -1,0 +1,11 @@
+# OS generated files
+.DS_Store
+.Thumb.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Node modules (if used later)
+node_modules/
+dist/
