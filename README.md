@@ -1,7 +1,7 @@
 # 🌐 Visernic Limited - Company Profile
 
 **Professional Web Development & Tech Solutions**  
-📧 [contact@visernic.com](mailto:contact@visernic.com)  
+📧 [support@visernic.com](mailto:support@visernic.com)  
 📞 +44 7577 062211  
 🌍 [https://visernic.com](https://visernic.com)
 
